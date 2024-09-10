@@ -1,8 +1,9 @@
 package incrementor
 
-var Value int = 0
+var (
+	Value int
+)
 
-
-func Increment() {
-	Value += *Value + 1
+func Increment(ptr *int) {
+	*ptr++
 }
